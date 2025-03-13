@@ -9,4 +9,5 @@ public class Book {
         this.isAvailable = true; // Книга доступна по умолчанию
 
     }
+
 }
