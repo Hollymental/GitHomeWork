@@ -9,4 +9,15 @@ public class Car {
         this.year = year;
 
     }
+    public String displayInfo() {
+        return "Автомобиль: " + model + "\nМарка: " + brand + "\nГод выпуска: " + year;
+    }
+    public void setYear(int year) {
+        if (year > 1885) { // Первый автомобиль был создан в 1885
+            this.year = year;
+        } else {
+            System.out.println("Введите корректный год выпуска.");
+        }
+    }
+
 }
