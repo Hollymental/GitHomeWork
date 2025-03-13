@@ -12,5 +12,7 @@ public class Book {
     public String getBookInfo() {
         return "Название: " + title + ", Автор: " + author + ", Доступность: " + (isAvailable ? "Доступна" : "Недоступна");
     }
-
+    public boolean isAvailable() {
+        return isAvailable; // Проверяет доступность книги
+    }
 }
