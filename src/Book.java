@@ -9,4 +9,8 @@ public class Book {
         this.isAvailable = true; // Книга доступна по умолчанию
 
     }
+    public String getBookInfo() {
+        return "Название: " + title + ", Автор: " + author + ", Доступность: " + (isAvailable ? "Доступна" : "Недоступна");
+    }
+
 }
