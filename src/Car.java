@@ -19,5 +19,8 @@ public class Car {
             System.out.println("Введите корректный год выпуска.");
         }
     }
-
+    public int getAge() {
+        int currentYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
+        return currentYear - year;
+    }
 }
